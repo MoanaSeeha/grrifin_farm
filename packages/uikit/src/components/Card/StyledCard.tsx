@@ -42,7 +42,7 @@ const getBorderColor = ({ isActive, isSuccess, isWarning, borderBackground, them
 };
 
 export const StyledCard = styled.div<StyledCardProps>`
-  background: ${getBorderColor};
+  background: "${getBorderColor}";
   border-radius: ${({ theme }) => theme.radii.card};
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "text"]};
   overflow: hidden;

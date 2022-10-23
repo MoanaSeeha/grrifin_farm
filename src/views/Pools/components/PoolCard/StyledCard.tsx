@@ -16,6 +16,7 @@ export const StyledCard = styled(Card)<{ isFinished?: boolean }>`
     max-width: 350px;
     margin: 0 12px 46px;
   }
+  border: 1px solid black;
 `
 
 export default StyledCard

@@ -25,6 +25,7 @@ const StyledCard = styled(Card)`
     max-width: 350px;
     margin: 0 12px 46px;
   }
+  border: 2px solid black;
 `
 
 const FarmCardInnerContainer = styled(Flex)`
@@ -87,7 +88,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
 
   return (
     <StyledCard isActive={isPromotedFarm}>
-      <FarmCardInnerContainer>
+      <div style={{ background: 'linear-gradient(90deg, #f1473e 0%, #e32f66 100%)' }}>
         <CardHeading
           lpLabel={lpLabel}
           multiplier={farm.multiplier}
@@ -97,6 +98,8 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
           boosted={farm.boosted}
           isStable={farm.isStable}
         />
+      </div>
+      <FarmCardInnerContainer>
         {!removed && (
           <Flex justifyContent="space-between" alignItems="center">
             <Text>{t('APR')}:</Text>
@@ -158,7 +161,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
         {showExpandableSection && (
           <DetailsSection
             removed={removed}
-            bscScanAddress={getBlockExploreLink("0xCDBAd1504b4AB0f2B124b8bA1E11C940554A1f87", 'address', chainId)}
+            bscScanAddress={getBlockExploreLink('0xCDBAd1504b4AB0f2B124b8bA1E11C940554A1f87', 'address', chainId)}
             infoAddress={`https://pancake.kiemtienonline360.com/info/pools${multiChainPaths[chainId]}/${lpAddress}`}
             totalValueFormatted={totalValueFormatted}
             lpLabel={lpLabel}

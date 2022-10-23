@@ -3,7 +3,7 @@ import { darkColors, lightColors } from "../../theme/colors";
 import { CardTheme } from "./types";
 
 export const light: CardTheme = {
-  background: lightColors.backgroundAlt,
+  background: lightColors.background,
   boxShadow: vars.shadows.level1,
   boxShadowActive: vars.shadows.active,
   boxShadowSuccess: vars.shadows.success,
@@ -18,7 +18,7 @@ export const light: CardTheme = {
 };
 
 export const dark: CardTheme = {
-  background: darkColors.backgroundAlt,
+  background: darkColors.background,
   boxShadow: vars.shadows.level1,
   boxShadowActive: vars.shadows.active,
   boxShadowSuccess: vars.shadows.success,

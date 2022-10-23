@@ -19,6 +19,7 @@ const Wrapper = styled(Flex)`
   svg {
     margin-right: 4px;
   }
+  padding: 24px;
 `
 
 const MultiplierTag = styled(Tag)`

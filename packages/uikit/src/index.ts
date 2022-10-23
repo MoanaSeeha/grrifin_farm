@@ -12,6 +12,7 @@ export * from "./components/Checkbox";
 export * from "./components/Dropdown";
 export * from "./components/FallingBunnies";
 export * from "./components/Heading";
+export * from "./components/HeadingFarm";
 export * from "./components/Image";
 export * from "./components/Input";
 export * from "./components/Layouts";

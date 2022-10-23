@@ -1,5 +1,5 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Button, Flex, Heading, TooltipText, useToast, useTooltip } from '@pancakeswap/uikit'
+import { Button, Flex, Heading, TooltipText, useToast, useTooltip, HeadingFarm } from '@pancakeswap/uikit'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import BigNumber from 'bignumber.js'
 import Balance from 'components/Balance'
@@ -49,12 +49,12 @@ const HarvestAction: React.FC<React.PropsWithChildren<FarmCardActionsProps>> = (
         {proxyCakeBalance ? (
           <>
             <TooltipText ref={targetRef} decorationColor="secondary">
-              <Heading color={rawEarningsBalance.eq(0) ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
+              <HeadingFarm color={rawEarningsBalance.eq(0) ? 'gray' : 'black'}>{displayBalance}</HeadingFarm>
             </TooltipText>
             {tooltipVisible && tooltip}
           </>
         ) : (
-          <Heading color={rawEarningsBalance.eq(0) ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
+          <HeadingFarm color={rawEarningsBalance.eq(0) ? 'gray' : 'black'}>{displayBalance}</HeadingFarm>
         )}
         {earningsBusd > 0 && (
           <Balance fontSize="12px" color="textSubtle" decimals={2} value={earningsBusd} unit=" USD" prefix="~" />

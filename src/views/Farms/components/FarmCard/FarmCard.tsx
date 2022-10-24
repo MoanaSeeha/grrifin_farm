@@ -17,6 +17,10 @@ import DetailsSection from './DetailsSection'
 
 import BoostedApr from '../YieldBooster/components/BoostedApr'
 
+// const StyledDivFarm = styled.div`
+//   background: ${({ theme }) => theme.colors.gradientCardHeader};
+// `
+
 const StyledCard = styled(Card)`
   align-self: baseline;
   max-width: 100%;
@@ -38,6 +42,10 @@ const ExpandingWrapper = styled.div`
   padding: 24px;
   border-top: 2px solid ${({ theme }) => theme.colors.cardBorder};
   overflow: hidden;
+`
+
+const StyledDivFarm = styled.div`
+  background: ${({ theme }) => theme.colors.gradientCardHeader};
 `
 
 interface FarmCardProps {
@@ -88,7 +96,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
 
   return (
     <StyledCard isActive={isPromotedFarm}>
-      <div style={{ background: 'linear-gradient(90deg, #f1473e 0%, #e32f66 100%)' }}>
+      <StyledDivFarm>
         <CardHeading
           lpLabel={lpLabel}
           multiplier={farm.multiplier}
@@ -98,7 +106,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
           boosted={farm.boosted}
           isStable={farm.isStable}
         />
-      </div>
+      </StyledDivFarm>
       <FarmCardInnerContainer>
         {!removed && (
           <Flex justifyContent="space-between" alignItems="center">

@@ -85,6 +85,7 @@ const config: (
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
+      showItemsOnMobile: false,
       supportChainIds: SUPPORT_ONLY_BSC,
       items: [
         // {

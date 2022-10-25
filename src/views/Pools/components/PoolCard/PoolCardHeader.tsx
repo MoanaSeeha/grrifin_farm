@@ -33,7 +33,7 @@ export const PoolCardHeaderTitle: React.FC<
       <Heading color={isFinished ? 'textDisabled' : 'body'} scale="lg">
         {title}
       </Heading>
-      <Text fontSize="14px" color={isFinished ? 'textDisabled' : 'textSubtle'}>
+      <Text fontSize="14px" color={isFinished ? 'textDisabled' : 'text'}>
         {subTitle}
       </Text>
     </Flex>

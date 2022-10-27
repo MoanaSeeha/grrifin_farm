@@ -169,7 +169,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
         {showExpandableSection && (
           <DetailsSection
             removed={removed}
-            bscScanAddress={getBlockExploreLink('0xCDBAd1504b4AB0f2B124b8bA1E11C940554A1f87', 'address', chainId)}
+            bscScanAddress={getBlockExploreLink('0x92248023D6179528c3554DbE03ED4CF6bb5562a9', 'address', chainId)}
             infoAddress={`https://pancake.kiemtienonline360.com/info/pools${multiChainPaths[chainId]}/${lpAddress}`}
             totalValueFormatted={totalValueFormatted}
             lpLabel={lpLabel}

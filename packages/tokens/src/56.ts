@@ -2313,4 +2313,6 @@ export const bscTokens = {
     'https://www.chibidinos.io/',
   ),
   co: new Token(ChainId.BSC, '0x936B6659Ad0C1b244Ba8Efe639092acae30dc8d6', 6, 'CO', 'CO', 'https://corite.com/'),
+  gland: new Token(ChainId.BSC, '0x59234F46AcdB449d5A43eeFd841Bc07a21613Fc1', 9, 'GLAND', 'Griffin LAND'),
+  gart: new Token(ChainId.BSC, '0xd1ECFDD45c49057479c4Ca95E045855370bC4F5B', 9, 'GART', 'Griffin ART'),
 }

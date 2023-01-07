@@ -44,10 +44,11 @@ const config: (
 ) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
   [
     {
-      label: t('Pool'),
-      icon: SwapIcon,
-      fillIcon: SwapFillIcon,
-      href: '/pools',
+      label: t('Lottery'),
+      href: '/',
+      icon: TrophyIcon,
+      image: '/images/decorations/lottery.png',
+      fillIcon: TrophyFillIcon,
       showItemsOnMobile: false,
       items: [
         // {
@@ -80,8 +81,8 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Farm'),
-      href: '/farms',
+      label: t('Bank'),
+      href: '/#',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',

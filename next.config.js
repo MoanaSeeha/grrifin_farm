@@ -161,5 +161,16 @@ module.exports = {
     // your project has type errors.
     // !! WARN !!
     ignoreBuildErrors: true,
+  },exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/farms' },
+      '/pools': { page: '/pools' },
+      '/farms': { page: '/farms' },
+    }
+  }, images : {
+    unoptimized:true,
   },
 }
